@@ -269,12 +269,14 @@ body{
 
 /* Estilos del menu visual para la parte del mobil */
 .mobile-menu{
-    padding: 24px;
+    position: absolute;
+    top: 44px;
+    padding: 0px;
 }
 
 .mobile-menu ul{
     padding: 0;
-    margin: 40px 0 0 0;
+    margin: 0;
     list-style: none;
     border-bottom: 1px solid var(--very-light-pink);
 }
@@ -628,5 +630,23 @@ object-fit: cover;
     }
     .product-detail{
         width: 100%;
+    }
+    .menu-barra{
+        display: block;
+    }
+    .navbar-left ul{
+        display: none;
+    }
+    .navbar-email{
+        display: none;
+    }
+    .desktop-menu{  
+        display: none;
+    }
+}
+
+@media (min-width: 641px){
+    .mobile-menu{
+        display: none;
     }
 }
