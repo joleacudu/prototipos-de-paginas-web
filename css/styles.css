@@ -226,7 +226,15 @@ body{
 }
 
 /* Estilos para la barra de menu de la aplicación en pc*/
+.inactive{
+    display: none; /*Para desaparecer el barra menu*/
+}
+
 .desktop-menu{
+    position: absolute;
+    background: var(--white);
+    top: 60px;
+    right: 64px;
     width: 100px;
     height: auto;
     border: 1px solid var(--very-light-pink);
@@ -453,10 +461,12 @@ nav{
     font-size: var(--sm);
     font-weight: bold;
     margin-right: 16px;
+    cursor: pointer;
 }
 
 .navbar-shopping-cart{
     position: relative;
+    cursor: pointer;
 }
 .navbar-shopping-cart div{
     width: 16px;
